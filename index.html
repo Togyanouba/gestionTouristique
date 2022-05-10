@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Enregistrement Client</title>
+</head>
+<body id="titre">
+    <video id="background-video" autoplay loop muted>
+
+        <source src="video.mp4" type="video/mp4">
+        
+        </video>
+        
+         
+        
+        <div class="content">
+        
+       
+        
+        <button id="btnVideo" onclick="playAndPause()">Pause II</button>
+        
+        </div>
+    
+    <h1><center>PLATEFORME DE GESTION TOURISTIQUE</center></h1>
+    <h1 style="color:green;"><center>Bienvenue à l'espace touriste/visiteur de la plateforme</center></h1>
+       
+    <table class="exemple">
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault(); onFormSubmit()">
+
+                    <div>
+                        <label for="code">IDENTIFIANT</label>
+                        <input type="text" name="code" id="code">
+                    </div>
+                    <div>
+                        <label for="nom">NOM <em>&#x2a;</em> <label class="validation-error hide"  id="nomValidationError" >renseigner un nom</label> </label>
+                        <input type="text" name="nom" id="nom">
+                    </div>   
+                    <div>
+                        <label for="prenom">PRENOM <em>&#x2a;</em> <label class="validation-error hide"  id="prenomValidationError" >renseigner un prenom</label> </label>
+                        <input type="text" name="prenom" id="prenom">
+                    </div>               
+                    <div>
+                        <label for="email">EMAIL </label>
+                        <input type="mailto" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="prenom">MOT DE PASSE <em>&#x2a;</em> <label class="validation-error hide"  id="passwordValidationError" >le mot de passe est obligatoire</label> </label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div>
+                        <input class="form-action-buttons submit" type="submit" value="ENREGISTRER">
+                    </div>
+
+                        </form>
+                      </div>
+                    
+                </form>
+            </td>
+            <td>
+                <table class="list" id="emplist">
+                    <thead>
+                        <tr>
+                            <td class="thead">IDENTIFIANT</td>
+                            <td class="thead">NOM</td>
+                            <td class="thead">PRENOM</td>
+                            <td class="thead">EMAIL</td>
+                            <td class="thead">MOT DE PASSE</td>
+                            <td class="thead">Actions</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
